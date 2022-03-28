@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--layout of each individual menu item-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="100sp"
+        android:layout_height="70sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:adjustViewBounds="true"
+        android:background="#A54040"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_sans_regular"
+        android:text="Chicken Cai Fan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintStart_toEndOf="@id/foodImage"
+        app:layout_constraintTop_toTopOf="@id/foodImage" />
+
+    <TextView
+        android:id="@+id/foodDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_sans_regular"
+        android:text="enter descrsiption here"
+        android:textColor="#A54040"
+        android:textSize="12sp"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/foodImage"
+        app:layout_constraintStart_toEndOf="@id/foodImage"
+        app:layout_constraintTop_toBottomOf="@id/foodName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
